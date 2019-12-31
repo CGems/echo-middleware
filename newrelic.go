@@ -29,7 +29,6 @@ func NewRelicWithApplication(app nr.Application) echo.MiddlewareFunc {
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
 			transactionName := fmt.Sprintf("%s-%s", c.Path(), c.Request().Method)
-			fmt.Println(transactionName)
 			txn := app.StartTransaction(transactionName, c.Response().Writer, c.Request())
 			defer txn.End()
 
