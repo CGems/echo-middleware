@@ -1,3 +1,3 @@
-module github.com/oldfritter/echo-middleware/v4
+module github.com/oldfritter/echo-middleware
 
 go 1.13
