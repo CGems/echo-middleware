@@ -1,3 +1,3 @@
-module github.com/oldfritter/echo-middleware/v4
+module github.com/CGems/echo-middleware/v4
 
-go 1.13
+go 1.14
